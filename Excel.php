@@ -455,7 +455,7 @@ class Excel extends \yii\base\Widget
 	/**
 	 * Setting data from models
 	 */
-	public function executeColumns(&$activeSheet = null, $models, $columns = [], $headers = [])
+	public function executeColumns(&$activeSheet, $models, $columns = [], $headers = [])
 	{
 		if ($activeSheet == null) {
 			$activeSheet = $this->activeSheet;
